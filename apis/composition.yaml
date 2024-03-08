@@ -203,7 +203,7 @@ spec:
                     type: string
               - type: FromCompositeFieldPath
                 fromFieldPath: spec.parameters.oidcConfig
-                toFieldPath: spec.forProvider.values.server.config[oidc.config]
+                toFieldPath: spec.forProvider.values.configs.cm[oidc.config]
               - type: FromCompositeFieldPath
                 fromFieldPath: spec.parameters.operators.argocd.version
                 toFieldPath: spec.forProvider.chart.version
